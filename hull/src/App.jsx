@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import MapChart from './MapChart'
+import MainMap from './MainMap'
 
 function App() {
 
   return (
     <>
-      <MapChart />
+      <div className='map-container h-full'>
+        <MainMap />
+      </div>
     </>
   )
 }
