@@ -52,7 +52,7 @@ const MainMap = () => {
       mapStyle="mapbox://styles/mapbox/light-v11"
       projection={"globe"}
       mapboxAccessToken="pk.eyJ1IjoicGFub3NvdiIsImEiOiJjbGp2NjUwaXIwNmJqM2NvNm51dXplZTh3In0.q9o_JnLNTSr-m3vEI7VwQg"
-    >
+    >      
       {geojson && (
         <Source id="track" type="geojson" data={geojson}>
           <Layer
@@ -63,7 +63,8 @@ const MainMap = () => {
               "line-width": 3,
               "line-cap": "round",
               "line-join": "round",
-              "line-blur": 2 
+              "line-blur": 2,
+              "line-dasharray": [10, 11]
             }}
           />
         </Source>
