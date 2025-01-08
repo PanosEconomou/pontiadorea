@@ -56,15 +56,9 @@ const MainMap = () => {
         width: '100%',
         height: '100vh',
       }}
-      // light={{
-      //   anchor: 'viewport', // Light follows the camera
-      //   position: [-90, 0, 80], // [azimuth, altitude, radius] in degrees
-      //   color: 'white',
-      //   intensity: 0.7 // Adjust for stronger or softer lighting
-      // }}
       mapStyle="mapbox://styles/panosov/cm5nmivl400cp01rz4uwe6l1r"
       // terrain={{ source: 'mapbox-dem'}}
-      projection={"globe"}
+      // projection={"globe"}
       mapboxAccessToken="pk.eyJ1IjoicGFub3NvdiIsImEiOiJjbGp2NjUwaXIwNmJqM2NvNm51dXplZTh3In0.q9o_JnLNTSr-m3vEI7VwQg"
     >
       {/* <Source
