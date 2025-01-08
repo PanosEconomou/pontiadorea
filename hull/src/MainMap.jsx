@@ -43,9 +43,9 @@ const MainMap = () => {
   return (
     <Map
       initialViewState={{
-        latitude: 37.192799,
-        longitude:  19.960850,
-        zoom: 6,
+        latitude: 38.192799,
+        longitude:  20.960850,
+        zoom: 6.5,
       }}
       // onMove={(evt) => setViewState(evt.viewState)}
       style={{ width: '100%', height: '100vh' }}
@@ -60,7 +60,10 @@ const MainMap = () => {
             type="line"
             paint={{
               "line-color": "blue",
-              "line-width": 4,
+              "line-width": 3,
+              "line-cap": "round",
+              "line-join": "round",
+              "line-blur": 2 
             }}
           />
         </Source>
